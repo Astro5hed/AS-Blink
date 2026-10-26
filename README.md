@@ -34,41 +34,19 @@ Open a folder of subs and AS Blink measures every frame in the background while 
 |---|---|
 | ![Light theme](screenshots/main_light.png) | ![Satellite trail](screenshots/trail.png) |
 
-## Installing
+## Download and install
 
-AS Blink is a single Python file. You need Python 3.10 or newer (it is developed on Python 3.11).
+AS Blink is a Windows program. Nothing needs installing first - everything it uses is included.
 
-1. Download or clone this repository.
-2. Install the libraries it uses:
+1. Go to the [Releases page](../../releases/latest) and download the `.zip` file under **Assets**.
+2. Unzip it somewhere permanent, for example `C:\Programs\AS Blink`.
+3. Run `AS_Blink.exe` from the unzipped folder. Keep everything in that folder together: the program needs the files next to it.
 
-   ```
-   pip install -r requirements.txt
-   ```
+You can make a desktop shortcut to `AS_Blink.exe`, and you can drag a folder of subs onto the shortcut or onto the open window.
 
-3. Run it:
+**Windows warning:** AS Blink is not code-signed, so the first time you run it Windows SmartScreen may say "Windows protected your PC". Click **More info**, then **Run anyway**. Some antivirus programs also flag new programs built with Python. If yours does, add an exception for the AS Blink folder.
 
-   ```
-   python AS_Blink.py
-   ```
-
-   On Windows you can use `pythonw AS_Blink.py` so no console window opens.
-
-You can also give it a folder or files to open straight away: `python AS_Blink.py "D:\Astro\M45\Lights"`.
-
-### Libraries
-
-| Library | Needed for |
-|---|---|
-| PySide6 | the window (Qt) |
-| numpy | everything |
-| opencv-python-headless | image processing, debayering, video |
-| Pillow | GIF export, and EXIF details from JPG and camera RAW files |
-| tifffile | TIFF files, with their tags (without it, OpenCV reads TIFFs in a simpler way) |
-| rawpy | camera RAW files (optional) |
-| lz4, zstandard | compressed XISF files (optional) |
-| astropy | tile-compressed FITS (`.fz`) (optional) |
-
-The optional ones can be left out. AS Blink still runs and simply cannot open those file types.
+**Updating:** download the new zip from Releases and unzip it over the old folder (or into a new one). Your settings and layout are kept, because they are stored in Windows, not in the program folder.
 
 ## Keys
 
@@ -117,7 +95,7 @@ AS Blink keeps a log of what it does: the files it opens (file names only, never
 
 AS Blink is **freeware**. Copyright (c) 2026 Stewart Oliver, AstroShed.
 
-You may use it free of charge and share it unchanged, but not sell it or share changed versions without permission. It comes with no warranty, so keep backups of your data. See [LICENCE.txt](LICENCE.txt) for the full terms. The libraries it uses each have their own licences.
+You may use it free of charge and share it unchanged, but not sell it, modify it or share changed versions without permission. It comes with no warranty, so keep backups of your data. See [LICENCE.txt](LICENCE.txt) for the full terms; it is also included in the download. The libraries it uses each have their own licences.
 
 ## Support
 

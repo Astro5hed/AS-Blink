@@ -9,7 +9,7 @@ FREEWARE LICENCE
    copyright notice stay with it and nobody is charged for it.
 3. You may not sell AS Blink, include it in a paid product or bundle, or
    share changed versions of it, without written permission from the author.
-4. You may read the code and change it for your own private use.
+4. You may not decompile, reverse engineer or modify AS Blink.
 5. Copyright stays with the author. This licence gives you the right to use
    the program; it does not give you ownership of it.
 6. AS Blink is provided "as is", without warranty of any kind. The author is
