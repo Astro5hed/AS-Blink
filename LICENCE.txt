@@ -1,0 +1,20 @@
+AS Blink
+Copyright (c) 2026 Stewart Oliver, AstroShed (astroshed.co.uk)
+All rights reserved.
+
+FREEWARE LICENCE
+1. AS Blink is free. You may use it without charge, for personal or
+   commercial imaging work.
+2. You may copy and share AS Blink, unchanged, as long as this licence and
+   copyright notice stay with it and nobody is charged for it.
+3. You may not sell AS Blink, include it in a paid product or bundle, or
+   share changed versions of it, without written permission from the author.
+4. You may read the code and change it for your own private use.
+5. Copyright stays with the author. This licence gives you the right to use
+   the program; it does not give you ownership of it.
+6. AS Blink is provided "as is", without warranty of any kind. The author is
+   not liable for any loss or damage from using it, including lost or moved
+   files. Sorting into folders moves your files: keep backups of your data.
+7. AS Blink uses third-party libraries (PySide6/Qt, NumPy, OpenCV, Pillow,
+   tifffile, rawpy/LibRaw, lz4, zstandard, astropy), each under its own
+   licence. This licence does not change their terms.

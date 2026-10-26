@@ -1,0 +1,9 @@
+PySide6
+numpy
+opencv-python-headless
+Pillow
+tifffile
+rawpy
+lz4
+zstandard
+astropy
