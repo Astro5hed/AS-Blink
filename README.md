@@ -103,5 +103,6 @@ You may use it free of charge and share it unchanged, but not sell it, modify it
 ## Support
 
 More AstroShed software and videos: [astroshed.co.uk](https://astroshed.co.uk)
-If AS Blink saves you time, you can buy me a coffee: 
+If AS Blink saves you time, you can buy me a coffee:
+
 <a href="https://www.buymeacoffee.com/astroshed" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me a Coffee" style="height: 60px !important;width: 217px !important;" ></a>
