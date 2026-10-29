@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.0.2
+
+- **Fixed:** on Windows, a file sorted into the Good or Bad folder could be saved under its short 8.3 name (such as `LIGH~12D.FIT`) instead of its full name. This happened with very long paths, for example long N.I.N.A. file names in deep folders on a shared drive. AS Blink now always uses the full file name and handles paths over Windows' 260-character limit.
+- **Added:** a **Focuser temp** graph, read from FOCTEMP (or FOCUSTEM) in the header. It shows whether a change in FWHM follows the temperature or the seeing.
+- The **Temperature** graph is now called **Sensor temp**, so the two are not mixed up.
+- A graph for a header value that the files don't have now says "not in these files' headers" instead of "no data yet".
+- **Added:** opening a SER or video longer than 2,000 frames asks whether to load all of it or just a number of frames from a chosen start frame. Only those frames are measured, so a long capture is ready in seconds, and Sort into folders can save them as a new, shorter SER.
+- **Fixed:** planetary and lunar SER or video captures with a near-black sky were stretched so hard the planet blew out to white. The **Linear** stretch now takes its white point from the planet or Moon itself, and SER and video files open on Linear automatically. Your own stretch choice comes back when you open subs again.
+
 ## 1.0.1
 
 - **Videos:** opens AVI, MP4 and MOV files as well as SER. Every frame is a row in the table: step through them one at a time with Left / Right, or play at 0.5 to 30 frames a second.

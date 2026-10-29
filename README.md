@@ -18,6 +18,7 @@ Open a folder of subs and AS Blink measures every frame in the background while 
 - **Reads almost everything:** FITS (including `.fz`), XISF (including compressed), TIFF, PNG, JPG, BMP, WebP, camera RAW (CR2, CR3, NEF, ARW, DNG, ORF, RAF, RW2 and more), SER, and AVI / MP4 / MOV video.
 - **Correct colour (OSC) debayering:** reads the Bayer pattern from the header (BAYERPAT, ROWORDER, XBAYROFF / YBAYROFF, XISF colour filter array), checks it against the data, and warns you if the header has it wrong.
 - **Statistics for every frame:** background, noise, SNR, star count, FWHM (pixels and arcseconds), eccentricity, saturation, trails and shift.
+- **Session graphs** of any measurement through the night, including sensor and focuser temperature, so you can tell whether a rise in FWHM followed the temperature or the seeing.
 - **Graphs with sliders:** each graph has a slider that sets a limit. Dragging right is always stricter. **Suggest limits** finds the odd ones out for you, and **Keep only the best** keeps the best part of the session.
 - **Trail detection:** finds satellite and aircraft trails, including faint ones, and ignores nebula edges that show up in every frame.
 - **Align while blinking:** frames are lined up to a reference frame, including a 180 degree turn after a meridian flip.
@@ -84,6 +85,8 @@ Keep each filter in its own folder: the limits apply to every frame that is open
 ![A video loaded](screenshots/video.png)
 
 Every frame of a video becomes a row in the table. Step through it one frame at a time with Left / Right, or play it with Space at any speed from 0.5 to 30 frames a second. Video frames are only read for viewing and their brightness, not measured for stars, so even a long video is ready to play in seconds. To measure stars as well, tick **Measure stars in SER and video frames** in More options.
+
+SER and video files open on the **Linear** stretch, so a planet or the Moon shows its own detail instead of being blown out to white. For a capture longer than 2,000 frames, AS Blink asks whether to load all of it or just a number of frames from a chosen start frame. Load a few hundred, select them all and press G, and **Sort into folders** saves them as a new, shorter SER.
 
 **Sort into folders** writes new SER files holding the Good and the Bad frames of a SER video. Frames inside AVI, MP4 and MOV files are left out of sorting.
 
