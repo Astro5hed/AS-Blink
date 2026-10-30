@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.3
+
+- **Added:** an update check. Once a day AS Blink asks GitHub whether a newer version has been released. If there is one, a bar appears under the toolbar with an **Open the download page** button. Only the version number is asked for: nothing about you or your images is sent.
+- The Help window has a **Check GitHub for new versions (once a day)** tick box to turn it off, and a **Check now** button.
+
 ## 1.0.2
 
 - **Fixed:** on Windows, a file sorted into the Good or Bad folder could be saved under its short 8.3 name (such as `LIGH~12D.FIT`) instead of its full name. This happened with very long paths, for example long N.I.N.A. file names in deep folders on a shared drive. AS Blink now always uses the full file name and handles paths over Windows' 260-character limit.

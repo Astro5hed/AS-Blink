@@ -30,6 +30,7 @@ Open a folder of subs and AS Blink measures every frame in the background while 
 - **Videos:** step through SER, AVI, MP4 and MOV files one frame at a time, or play them at 0.5 to 30 frames a second.
 - **Themes:** Dark, Light and Night (red). The layout is remembered and can be locked.
 - **Support log:** if something goes wrong, **Log > Save log for support...** saves one text file to send in.
+- **Update check:** once a day it checks GitHub for a newer version and shows a bar with a link to the download page. Turn it off at the bottom of the Help window.
 
 | Light theme (mono subs) | Trail found |
 |---|---|
@@ -47,7 +48,7 @@ You can make a desktop shortcut to `AS_Blink.exe`, and you can drag a folder of 
 
 **Windows warning:** AS Blink is not code-signed, so the first time you run it Windows SmartScreen may say "Windows protected your PC". Click **More info**, then **Run anyway**. Some antivirus programs also flag new programs built with Python. If yours does, add an exception for the AS Blink folder.
 
-**Updating:** download the new zip from Releases and unzip it over the old folder (or into a new one). Your settings and layout are kept, because they are stored in Windows, not in the program folder.
+**Updating:** from 1.0.3 on, AS Blink tells you when a new version is out. Download the new zip from Releases and unzip it over the old folder (or into a new one). Your settings and layout are kept, because they are stored in Windows, not in the program folder.
 
 ## Keys
 
@@ -102,7 +103,6 @@ You may use it free of charge and share it unchanged, but not sell it, modify it
 
 ## Support
 
-More AstroShed software and videos: [astroshed.co.uk](https://astroshed.co.uk)
-If AS Blink saves you time, you can buy me a coffee:
+If AS Blink saves you time, you can buy me a coffee: [buymeacoffee.com/astroshed](https://buymeacoffee.com/astroshed)
 
-<a href="https://www.buymeacoffee.com/astroshed" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me a Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+More AstroShed software and videos: [astroshed.co.uk](https://astroshed.co.uk)
