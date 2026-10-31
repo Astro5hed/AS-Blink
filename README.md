@@ -105,4 +105,6 @@ You may use it free of charge and share it unchanged, but not sell it, modify it
 
 If AS Blink saves you time, you can buy me a coffee: [buymeacoffee.com/astroshed](https://buymeacoffee.com/astroshed)
 
+<a href="https://www.buymeacoffee.com/astroshed"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me a Coffee" height="50"></a>
+
 More AstroShed software and videos: [astroshed.co.uk](https://astroshed.co.uk)
