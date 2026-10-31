@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.0.4
+
+- **Added:** a sigma for each graph. **Suggest limits** now uses a separate sigma for FWHM, eccentricity, star count, background and SNR, set the same way round as PixInsight's SubframeSelector (plus for too high, minus for too low). The starting values are FWHM 2, eccentricity 2, background 2.5, star count -1.5 and SNR -2.5. Changing a sigma moves its slider straight away, and "(min. gap)" shows when the minimum gap, not the sigma, sets a limit.
+- **Added:** Sort into folders can put the folders **next to** each file's folder (`Lights_Bad` beside `Lights`) instead of inside it, so stacking software that reads the folders inside your lights folder does not pick up the bad frames.
+- **Added:** **Only move the Bad frames** in Sort into folders: the bad frames go, everything else stays where it is.
+- **Fixed:** "and the rest Good" only worked when ticked before pressing **Mark them Bad**; afterwards it did nothing. It is now its own **Mark the rest Good** button, which works at any time.
+- **Fixed:** Sort into folders gave the wrong counts when SER frames were sorted ("Move 0 files", and after a failed SER write even "Moved -1 files"). It now says how many files it moves and how many SER files it writes.
+- **Fixed:** sorting or undoing while the blink was playing could, on Windows, catch a sub while it was being read, leaving a copy in both folders. Playback now stops and any frame being read finishes first.
+- **Changed:** a tidier window. The blink controls are in a bar under the picture with Show trails, Magnifier, Fit and 1:1. Theme, Debayer, Lock layout and Reset layout are in a new **Settings** window, and the log is under the arrow beside **Help**. One toolbar row instead of two.
+
 ## 1.0.3
 
 - **Added:** an update check. Once a day AS Blink asks GitHub whether a newer version has been released. If there is one, a bar appears under the toolbar with an **Open the download page** button. Only the version number is asked for: nothing about you or your images is sent.
