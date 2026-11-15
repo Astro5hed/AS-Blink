@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.0.5
+
+- **Added:** a success rate on the pass line under Suggest limits, for example "97 of 112 frames pass, 15 fail - 86% success". It is rounded down, so it never shows 100% while a frame fails.
+- **Added:** **About AS Blink** in the Help menu, with the version, licence and links.
+- **Changed:** Prev, Play and Next are now centred under the picture and stay centred when the window or the divider is resized. The speed, Skip Bad and Selected only sit to their left.
+- **Changed:** a tidier toolbar. GIF / video and CSV are now under one **Export** button. Export, **Sort into folders** (now highlighted in the theme's colour), **Undo**, **Settings** and **Help** sit at the right-hand end.
+- **Fixed:** on smaller laptop screens (1366 and 1280 pixels wide) Help could drop off the end of the toolbar behind the >> arrow. The whole toolbar now fits.
+
 ## 1.0.4
 
 - **Added:** a sigma for each graph. **Suggest limits** now uses a separate sigma for FWHM, eccentricity, star count, background and SNR, set the same way round as PixInsight's SubframeSelector (plus for too high, minus for too low). The starting values are FWHM 2, eccentricity 2, background 2.5, star count -1.5 and SNR -2.5. Changing a sigma moves its slider straight away, and "(min. gap)" shows when the minimum gap, not the sigma, sets a limit.

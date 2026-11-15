@@ -26,7 +26,7 @@ Open a folder of subs and AS Blink measures every frame in the background while 
 - **Full header view:** every keyword, with a search box and an option to show only what changed from the previous frame.
 - **Magnifier**, fit to window and 1:1 zoom.
 - **Mark Good / Bad** with one key, then **sort into folders**: inside the lights folder, in a folder beside it (`Lights_Bad`), or anywhere you choose, and optionally only the Bad frames. Moves can be undone.
-- **GIF or MP4** of selected frames, and **CSV** of the statistics.
+- **Export:** a GIF or MP4 of selected frames, or a CSV of the statistics, from the **Export** button.
 - **Videos:** step through SER, AVI, MP4 and MOV files one frame at a time, or play them at 0.5 to 30 frames a second.
 - **Themes:** Dark, Light and Night (red), in **Settings**. The layout is remembered and can be locked.
 - **Support log:** if something goes wrong, **Save log for support...** (under the arrow beside **Help**) saves one text file to send in.
@@ -75,13 +75,13 @@ You can make a desktop shortcut to `AS_Blink.exe`, and you can drag a folder of 
 
 ## Rejecting frames
 
-The blink controls (Prev, Play, Next, speed, Skip Bad, Selected only) are in the bar under the picture.
+The blink controls are in the bar under the picture: **Prev**, **Play** and **Next** always sit in the middle, under the centre of the picture, with the speed, **Skip Bad** and **Selected only** on the left and **Show trails**, **Magnifier**, **Fit** and **1:1** on the right.
 
-Under each graph is a tick box, a sigma and a slider. The slider is the limit for that measurement (for example "Max FWHM 3.09 px"), drawn as a red line on the graph. Frames past a limit turn orange. Only measurements that are shown on a graph and ticked are used, so to judge on FWHM and star count alone, untick the others.
+Under each graph is a tick box, a sigma and a slider. The slider is the limit for that measurement (for example "Max FWHM 3.09 px"), drawn as a red line on the graph. Frames past a limit turn orange, and the line under the buttons shows how many pass and the success rate, for example "97 of 112 frames pass, 15 fail - 86% success". Only measurements that are shown on a graph and ticked are used, so to judge on FWHM and star count alone, untick the others.
 
 **Suggest limits** sets each ticked slider to the session's "odd ones out": frames worse than the typical value by more than that graph's sigma times its usual spread, or by a minimum gap if that is bigger (the gap stops a very steady graph flagging tiny wobbles, and "(min. gap)" shows when it sets the limit). Each graph has its own sigma, the same way round as PixInsight's SubframeSelector: plus for "too high" (FWHM 2, eccentricity 2, background 2.5) and minus for "too low" (star count -1.5, SNR -2.5). Change a sigma and its slider moves straight away.
 
-Frames are only flagged until you press **Mark them Bad**. **Mark the rest Good** marks every other measured frame, before or after. Nothing is moved until you use **Sort into folders**, which can put the Bad frames in a folder beside your lights folder (`Lights_Bad`), so stacking software that reads the folders inside your lights folder does not pick them up, and can leave everything else where it is.
+Frames are only flagged until you press **Mark them Bad**. **Mark the rest Good** marks every other measured frame, before or after. Nothing is moved until you use **Sort into folders** (the highlighted button at the right of the toolbar), which can put the Bad frames in a folder beside your lights folder (`Lights_Bad`), so stacking software that reads the folders inside your lights folder does not pick them up, and can leave everything else where it is.
 
 Keep each filter in its own folder: the limits apply to every frame that is open, and AS Blink warns you if a folder mixes filters, exposures or frame sizes.
 
@@ -107,8 +107,6 @@ You may use it free of charge and share it unchanged, but not sell it, modify it
 
 ## Support
 
-If AS Blink saves you time, you can buy me a coffee:
-
-<a href="https://www.buymeacoffee.com/astroshed"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me a Coffee" height="50"></a>
+If AS Blink saves you time, you can buy me a coffee: [buymeacoffee.com/astroshed](https://buymeacoffee.com/astroshed)
 
 More AstroShed software and videos: [astroshed.co.uk](https://astroshed.co.uk)
